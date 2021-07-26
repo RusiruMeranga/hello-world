@@ -1,6 +1,8 @@
 <template>
   <div>Hello {{ name }}</div>
   <div v-html="channel"></div>
+  <h2 v-bind:id="headingId">Heading</h2>
+  <button v-bind:disabled="isDisabled">Click me</button>
 </template>
 
 <script>
@@ -10,6 +12,8 @@ export default {
     return {
       name: "Rusiru Meranga",
       channel: "<b>Vue JS Channel</b>",
+      headingId: "Heading",
+      isDisabled: true,
     };
   },
 };
