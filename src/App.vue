@@ -1,6 +1,6 @@
 <template>
   <div>Hello {{ name }}</div>
-  <div v-text="channel"></div>
+  <div v-html="channel"></div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
   data() {
     return {
       name: "Rusiru Meranga",
-      channel: "Vue JS Channel",
+      channel: "<b>Vue JS Channel</b>",
     };
   },
 };
